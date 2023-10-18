@@ -11,7 +11,7 @@ import nltk
 
 class SentimentRecommenderModel:
 
-    ROOT_PATH = "C:/Users/Varsha.Vishwakarma/Capstone Project/pickle/"
+    ROOT_PATH = "C:/Users/varsh/Desktop/upGrad/Sentiment_based_Product_Recommendation_System/pickle/"
     MODEL_NAME = "sentiment-classification-xg-boost-model.pkl"
     VECTORIZER = "tfidf-vectorizer.pkl"
     RECOMMENDER = "user_final_rating.pkl"
@@ -23,7 +23,7 @@ class SentimentRecommenderModel:
             SentimentRecommenderModel.ROOT_PATH + SentimentRecommenderModel.VECTORIZER)
         self.user_final_rating = pickle.load(open(
             SentimentRecommenderModel.ROOT_PATH + SentimentRecommenderModel.RECOMMENDER, 'rb'))
-        self.data = pd.read_csv("C:\\Users\\Varsha.Vishwakarma\\Capstone Project\\sample30.csv")
+        self.data = pd.read_csv("C:/Users/varsh/Desktop/upGrad/Sentiment_based_Product_Recommendation_System/sample30.csv")
         self.cleaned_data = pickle.load(open(
             SentimentRecommenderModel.ROOT_PATH + SentimentRecommenderModel.CLEANED_DATA, 'rb'))
         self.lemmatizer = WordNetLemmatizer()
