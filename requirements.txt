@@ -1,5 +1,0 @@
-pandas<2.0.0
-numpy
-nltk
-xgboost==1.7.1
-scikit-learn
